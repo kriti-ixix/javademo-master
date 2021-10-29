@@ -37,12 +37,12 @@ pipeline {
 
             pwd(); //Log current directory
 
-            withAWS(region:'us-east-1',credentials:'925264290682') {
+            withAWS(region:'ap-southeast-1', credentials:'925264290682') {
 
                  //def identity=awsIdentity();//Log AWS credentials
 
                 // Upload files from working directory 'dist' in your project workspace
-                s3Upload(bucket:"aitdemobucket", workingDir:'target/', includePathPattern:'*.jar');
+                s3Upload(bucket:"kriti-jenkins-bucket", workingDir:'target/', includePathPattern:'*.jar');
             }
 
 			//};
