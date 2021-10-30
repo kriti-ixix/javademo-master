@@ -44,8 +44,6 @@ pipeline {
                 // Upload files from working directory 'dist' in your project workspace
                 s3Upload(bucket:"kriti-jenkins-bucket", workingDir:'target/', includePathPattern:'*.jar');
             }
-
-			//};
                 }
             }
             
