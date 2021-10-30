@@ -35,7 +35,7 @@ pipeline {
                 always {
                     //dir('target/my-app-1.0-SNAPSHOT.jar'){
 
-            pwd(); //Log current directory
+            pwd();
 
             withAWS(region:'ap-southeast-1', credentials:'925264290682') {
 
