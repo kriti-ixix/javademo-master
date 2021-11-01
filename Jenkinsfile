@@ -33,7 +33,7 @@ pipeline {
             }
             post {
                 always {
-                    //dir('target/my-app-1.0-SNAPSHOT.jar'){
+                    dir('target/my-app-1.0-SNAPSHOT.jar'){
 
             pwd();
 
